@@ -1,0 +1,44 @@
+{
+  "name": "leadflow-server",
+  "version": "1.0.0",
+  "description": "Production-grade Express & MongoDB backend for LeadFlow CRM",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "seed:admin": "node scripts/seedAdmin.js",
+    "seed:demo": "node scripts/seedDemoData.js",
+    "seed": "node scripts/seedAdmin.js && node scripts/seedDemoData.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --runInBand --detectOpenHandles"
+  },
+  "keywords": [
+    "crm",
+    "leads",
+    "express",
+    "mongodb",
+    "mongoose",
+    "jwt",
+    "portfolio"
+  ],
+  "author": "LeadFlow Team",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "express-validator": "^7.2.1",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.5",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.9",
+    "supertest": "^7.0.0"
+  }
+}

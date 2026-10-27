@@ -1,0 +1,28 @@
+{
+  "name": "leadflow-crm",
+  "version": "1.0.0",
+  "description": "Full-Stack Client Lead Management System (Mini CRM) built with React, Vite, Node.js, Express, and MongoDB",
+  "private": true,
+  "scripts": {
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "start:server": "npm start --prefix server",
+    "build:client": "npm run build --prefix client",
+    "test:server": "npm test --prefix server",
+    "seed": "npm run seed --prefix server",
+    "seed:demo": "npm run seed:demo --prefix server"
+  },
+  "keywords": [
+    "crm",
+    "lead-management",
+    "react",
+    "vite",
+    "nodejs",
+    "express",
+    "mongodb",
+    "full-stack",
+    "portfolio"
+  ],
+  "author": "LeadFlow CRM Team",
+  "license": "MIT"
+}
